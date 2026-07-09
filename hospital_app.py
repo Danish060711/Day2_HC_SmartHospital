@@ -57,3 +57,13 @@ chief_complaint = st.selectbox(
   "Chief Complaint",
   list(cc_map.keys())
 )
+
+duration = st.selectbox(
+  "Duration",
+  list(dur_map.keys())
+)
+
+temperature = st.selectbox(
+  "Temperature",
+  list(tem_map.keys())
+)
