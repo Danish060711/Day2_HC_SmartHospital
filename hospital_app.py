@@ -26,3 +26,10 @@ dur_map = bundle['dur_map']
 cc_map = bundle['cc_map']
 
 st.header("Patient Information")
+
+age = st.numaber_input(
+  "Age",
+  min_value=1
+  max_value=120,
+  value=35
+)
