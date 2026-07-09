@@ -120,4 +120,4 @@ if st.button("Predict Department"):
 
   department = dept_map_inv[prediction]
 
-  st.succes(f"Recommended Department: {department}")
+  st.success(f"Recommended Department: {department}")
