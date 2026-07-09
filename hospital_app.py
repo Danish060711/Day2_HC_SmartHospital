@@ -47,7 +47,7 @@ headache = st.checkbox("Headache")
 chest_pain = st.checkbox("Chest Pai")
 stomach_pain = st.checkbox("Stomach Pain")
 shortness_breath = st.checkbox("Shortness Breath")
-nausea_vomoting = st.checkbox("Nausea / Vomoting")
+nausea_vomiting = st.checkbox("Nausea / Vomkting")
 dizziness = st.checkbox("Dizziness")
 skin_rash = st.checkbox("Skin Rash")
 
@@ -87,7 +87,7 @@ if st.button("Predict Department"):
     'chest_pain': int(chest_pain),
     'stomach_pain': int(stomach_pain),
     'shortness_breath': int(shortness_breath),
-    'nausea_vomoting': int(nausea_vomoting),
+    'nausea_vomiting': int(nausea_vomiting),
     'dizziness': int(dizziness),
     'skin_rash' : int(skin_rash),
 
