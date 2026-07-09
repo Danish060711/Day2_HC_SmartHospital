@@ -101,8 +101,8 @@ if st.button("Predict Department"):
       dur_map.get(duration, 1),
 
     'asthma': int(asthma),
-    'hypertension': int(hypertension, 1),
-    'heart_disease': int(heart_disease, 1),
+    'hypertension': int(hypertension),
+    'heart_disease': int(heart_disease),
 
     'chief_complaint':
       cc_map.get(chief_complaint, 9)
