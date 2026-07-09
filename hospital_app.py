@@ -110,7 +110,7 @@ if st.button("Predict Department"):
 
   patient_scaled = patient.copy()
 
-  patient_scaled[cols_scale] = scaler.tranform(
+  patient_scaled[cols_scale] = scaler.transform(
     patient[cols_to_scale] 
   )
   
