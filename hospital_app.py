@@ -63,11 +63,10 @@ duration = st.selectbox(
   list(dur_map.keys())
 )
 
-temperature = st.selectbox(
+temperature_level = st.selectbox(
   "Temperature",
   list(temp_map.keys())
 )
-
 
 heart_rate_level = st.selectbox(
   "Heart Rate",
@@ -108,3 +107,13 @@ if st.button("Predict Department"):
     'chief_complaint':
       cc_map.get(chief_complaint, 9)
   }])
+
+patient_scaled = patient.copy()
+
+patient_scaled[colsto_scale] = scaler.tranform(
+  patient_scaled[features]
+)[0]
+
+department = demp_map_inv[prediciton]
+
+st.succes(f"Recommended Department: {department}")
