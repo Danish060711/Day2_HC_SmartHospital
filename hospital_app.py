@@ -33,3 +33,8 @@ age = st.number_input(
   max_value=120,
   value=35
 )
+
+gender = st.selectbox(
+  "Gender",
+  ["Female", "Male"]
+)
