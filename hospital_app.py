@@ -114,6 +114,6 @@ if st.button("Predict Department"):
   patient_scaled[features]
 )[0]
 
-department = demp_map_inv[prediction]
+department = dept_map_inv[prediction]
 
 st.succes(f"Recommended Department: {department}")
